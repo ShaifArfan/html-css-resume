@@ -14,20 +14,11 @@ html {
 }
 body {
 	font-family: Inter, sans-serif;
-	background: black;
+	background-color: black;
 	color: white;
 }
 
-/* Common Styles */
-
-@media only screen and (max-width: 768px) {
-	.container {
-		width: 100%;
-		grid-template-columns: 1fr;
-		padding: 3rem;
-		gap: 7rem;
-	}
-}
+/* common styles */
 img {
 	width: 100%;
 }
@@ -64,31 +55,31 @@ a {
 	font-weight: 400;
 }
 
-/* layout */
-
-/* 
-	container
-	|- profile(top)
-	|- group-1(left)
-	|- group-2(right)
-	|- group-3(bottom)
-*/
+/* layouts */
 .container {
 	max-width: 1000px;
 	width: 90%;
 	margin: 0 auto;
 	display: grid;
 	padding: 5rem;
-	background-color: #070707;
+	background: #070707;
 	grid-template-columns: 1fr 1fr;
 	gap: 4rem;
 }
+@media only screen and (max-width: 768px) {
+	.container {
+		width: 100%;
+		grid-template-columns: 1fr;
+		padding: 3rem;
+		gap: 7rem;
+	}
+}
 .profile {
-	grid-column: 1/-1;
+	grid-column: 1 / -1;
 	margin-bottom: 2rem;
 }
-.group-2,
-.group-1 {
+.group-1,
+.group-2 {
 	display: flex;
 	flex-direction: column;
 	gap: 5rem;
@@ -97,7 +88,7 @@ a {
 	max-width: 700px;
 	width: 100%;
 	margin: 0 auto;
-	grid-column: 1 / -1;
+	grid-column: 1/-1;
 	display: flex;
 	flex-direction: row;
 	gap: 5rem;
@@ -106,29 +97,21 @@ a {
 	flex: 1;
 }
 @media only screen and (max-width: 768px) {
-	.container {
-		grid-template-columns: 1fr;
-		width: 100%;
-	}
 	.profile {
-		margin-bottom: 0rem;
+		margin-bottom: 0;
 	}
 	.group-3 {
 		flex-direction: column;
 	}
 }
 
-/* Profile */
-
+/* profile */
 .profile_container {
 	display: flex;
 	gap: 2rem;
 }
 .profile_profileImg {
 	max-width: 250px;
-}
-.profile_name {
-	margin-top: 1rem;
 }
 .profile_name_firstName {
 	color: white;
@@ -150,11 +133,8 @@ a {
 	font-weight: 400;
 	text-transform: uppercase;
 }
-.profile_description {
-	max-width: 400px;
-}
 .downloadBtn {
-	display: inline-block;
+	display: block;
 	text-decoration: underline;
 	font-size: 1.6rem;
 	margin-top: 1rem;
@@ -168,40 +148,14 @@ a {
 	}
 }
 
-/* experiences */
-
-.exp_item {
-	margin-top: 2rem;
-}
-
-/* education */
-
-.edu_item {
-	margin-top: 2rem;
-}
-
-/* Skills */
-
+/* Expertise */
 .skills_list {
 	margin-top: 1rem;
 	margin-left: 2rem;
 	line-height: 2;
 }
 
-/* awards */
-
-.awards_item {
-	margin-top: 2rem;
-}
-
-/* certifications */
-
-.certification_item {
-	margin-top: 2rem;
-}
-
-/* references */
-
+/* Ref  */
 .ref_item {
 	margin-top: 2rem;
 }
@@ -210,38 +164,25 @@ a {
 	font-weight: 700;
 }
 
-/* Contact Info */
-
-.contact_info {
+/* eduction */
+.edu_item {
 	margin-top: 2rem;
 }
 
-/* Socials */
-
-.social_items {
+/* certification */
+.certification_item {
 	margin-top: 2rem;
 }
-.social_item:first-of-type {
-	margin-top: 0;
-}
-.social_item {
-	margin-top: 1.5rem;
-	font-size: 1.5rem;
-	display: flex;
-	gap: 0.5rem;
-	align-items: center;
-	justify-content: flex-start;
-	color: var(--text-color);
-}
-.social_item:hover {
-	color: var(--primary-color);
-}
-.social_item svg {
-	width: 2rem;
+/* exp */
+.exp_item {
+	margin-top: 2rem;
 }
 
+/* awards */
+.awards_item {
+	margin-top: 2rem;
+}
 /* Interests */
-
 .interest_items {
 	margin-top: 2rem;
 	display: flex;
@@ -262,17 +203,37 @@ a {
 	width: 2rem;
 }
 
+/* socials */
+.social_items {
+	margin-top: 2rem;
+}
+.social_item {
+	margin-top: 1.5rem;
+	font-size: 1.5rem;
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
+	justify-content: flex-start;
+	color: var(--text-color);
+}
+.social_item:hover {
+	color: var(--primary-color);
+}
+.social_item svg {
+	width: 2rem;
+}
+
 hr {
 	grid-column: 1/-1;
+	width: 80%;
 	margin: 0 auto;
 	margin-top: 5rem;
 	margin-bottom: 1rem;
 	border: none;
-	border-top: 2px solid rgba(128, 128, 128, 0.134);
-	width: 80%;
+	border-top: 2px solid rgba(128, 128, 128, 0.229);
 }
 @media only screen and (max-width: 768px) {
 	hr {
-		margin: 0rem auto;
+		margin: 0 auto;
 	}
 }

@@ -153,6 +153,15 @@ a {
 .profile_description {
 	max-width: 400px;
 }
+.downloadBtn {
+	display: inline-block;
+	text-decoration: underline;
+	font-size: 1.6rem;
+	margin-top: 1rem;
+}
+.downloadBtn:hover {
+	color: var(--primary-color);
+}
 @media only screen and (max-width: 768px) {
 	.profile_container {
 		flex-direction: column;

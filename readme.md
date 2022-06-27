@@ -5,7 +5,7 @@
 Simple Resume built in HTML CSS only!
 
 **Live Preview: [https://html-css-resume.surge.sh/](https://html-css-resume.surge.sh/)**
-YouTube Tutorial: **comming soong**
+YouTube Tutorial: [https://youtu.be/FHb9JobDs2o][yt-video]
 
 ---
 
@@ -23,7 +23,7 @@ Like my works and want to support me?
 
 ### Q: How can i get started?
 
-You can get started by following the YouTube tutorial of this project. Here is the full tutorial video link: soon.
+You can get started by following the YouTube tutorial of this project. Here is the full tutorial video link: [https://youtu.be/FHb9JobDs2o][yt-video].
 
 ## Feedback
 
@@ -41,3 +41,4 @@ Happy Coding! ✨🚀
 [wc-projects]: https://github.com/ShaifArfan/wc-project-tutorials
 [wc-fb-group]: https://www.facebook.com/groups/webcifar
 [buymeacoffee]: https://www.buymeacoffee.com/shaifarfan08
+[yt-video]: https://youtu.be/FHb9JobDs2o
